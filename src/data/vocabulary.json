@@ -1,0 +1,2504 @@
+[
+  {
+    "id": "001_namu",
+    "category": "Nature",
+    "createdAt": 1,
+    "english": "tree",
+    "korean": "나무",
+    "notes": "",
+    "romanization": "namu"
+  },
+  {
+    "id": "002_norae",
+    "category": "Activities",
+    "createdAt": 2,
+    "english": "song / to sing",
+    "korean": "노래",
+    "notes": "",
+    "romanization": "norae"
+  },
+  {
+    "id": "003_nara",
+    "category": "Geography",
+    "createdAt": 3,
+    "english": "country / land",
+    "korean": "나라",
+    "notes": "",
+    "romanization": "nara"
+  },
+  {
+    "id": "004_gagu",
+    "category": "Home",
+    "createdAt": 4,
+    "english": "furniture",
+    "korean": "가구",
+    "notes": "",
+    "romanization": "gagu"
+  },
+  {
+    "id": "005_goguma",
+    "category": "Food",
+    "createdAt": 5,
+    "english": "sweet potato",
+    "korean": "고구마",
+    "notes": "",
+    "romanization": "goguma"
+  },
+  {
+    "id": "006_bada",
+    "category": "Nature",
+    "createdAt": 6,
+    "english": "sea / ocean",
+    "korean": "바다",
+    "notes": "",
+    "romanization": "bada"
+  },
+  {
+    "id": "007_dari",
+    "category": "Body",
+    "createdAt": 7,
+    "english": "leg / bridge",
+    "korean": "다리",
+    "notes": "다리 has two meanings: leg (body part) and bridge (structure)",
+    "romanization": "dari"
+  },
+  {
+    "id": "008_a",
+    "category": "Vowels",
+    "createdAt": 8,
+    "english": "\"ah\" as in father",
+    "korean": "아",
+    "notes": "Basic vowel — Week 1 homework. Mouth open wide.",
+    "romanization": "a"
+  },
+  {
+    "id": "009_eo",
+    "category": "Vowels",
+    "createdAt": 9,
+    "english": "\"uh\" as in son",
+    "korean": "어",
+    "notes": "Basic vowel — Week 1. Mouth open, lips unrounded.",
+    "romanization": "eo"
+  },
+  {
+    "id": "010_o",
+    "category": "Vowels",
+    "createdAt": 10,
+    "english": "\"oh\" as in go",
+    "korean": "오",
+    "notes": "Basic vowel — Week 1. Lips rounded.",
+    "romanization": "o"
+  },
+  {
+    "id": "011_u",
+    "category": "Vowels",
+    "createdAt": 11,
+    "english": "\"oo\" as in moon",
+    "korean": "우",
+    "notes": "Basic vowel — Week 1. Lips rounded, pushed forward.",
+    "romanization": "u"
+  },
+  {
+    "id": "012_eu",
+    "category": "Vowels",
+    "createdAt": 12,
+    "english": "no English equivalent — unrounded, like a soft grunt",
+    "korean": "으",
+    "notes": "Basic vowel — Week 1. Lips spread, tongue pulled back. Unique to Korean.",
+    "romanization": "eu"
+  },
+  {
+    "id": "013_i",
+    "category": "Vowels",
+    "createdAt": 13,
+    "english": "\"ee\" as in see",
+    "korean": "이",
+    "notes": "Basic vowel — Week 1. Lips spread wide.",
+    "romanization": "i"
+  },
+  {
+    "id": "014_ae",
+    "category": "Vowels",
+    "createdAt": 14,
+    "english": "\"ae\" as in air",
+    "korean": "애",
+    "notes": "Basic vowel — Week 1. Compound vowel (ㅇ + ㅐ).",
+    "romanization": "ae"
+  },
+  {
+    "id": "015_e",
+    "category": "Vowels",
+    "createdAt": 15,
+    "english": "\"eh\" as in bed",
+    "korean": "에",
+    "notes": "Basic vowel — Week 1. Compound vowel (ㅇ + ㅔ).",
+    "romanization": "e"
+  },
+  {
+    "id": "016_giyeok",
+    "category": "Consonants",
+    "createdAt": 16,
+    "english": "\"g\" as in go (start) · \"k\" as in kite (end)",
+    "korean": "ㄱ",
+    "notes": "Basic consonant. Soft at start, hard at end of syllable.",
+    "romanization": "g / k"
+  },
+  {
+    "id": "017_nieun",
+    "category": "Consonants",
+    "createdAt": 17,
+    "english": "\"n\" as in no",
+    "korean": "ㄴ",
+    "notes": "Basic consonant.",
+    "romanization": "n"
+  },
+  {
+    "id": "018_digeut",
+    "category": "Consonants",
+    "createdAt": 18,
+    "english": "\"d\" as in do (start) · \"t\" as in hot (end)",
+    "korean": "ㄷ",
+    "notes": "Basic consonant. Soft at start, hard at end.",
+    "romanization": "d / t"
+  },
+  {
+    "id": "019_rieul",
+    "category": "Consonants",
+    "createdAt": 19,
+    "english": "flap between \"r\" and \"l\" — unique to Korean",
+    "korean": "ㄹ",
+    "notes": "Tap tongue on roof of mouth. Between English r and l.",
+    "romanization": "r / l"
+  },
+  {
+    "id": "020_mieum",
+    "category": "Consonants",
+    "createdAt": 20,
+    "english": "\"m\" as in mom",
+    "korean": "ㅁ",
+    "notes": "Basic consonant.",
+    "romanization": "m"
+  },
+  {
+    "id": "021_bieup",
+    "category": "Consonants",
+    "createdAt": 21,
+    "english": "\"b\" as in boy (start) · \"p\" as in cap (end)",
+    "korean": "ㅂ",
+    "notes": "Basic consonant. Soft at start, hard at end.",
+    "romanization": "b / p"
+  },
+  {
+    "id": "022_siot",
+    "category": "Consonants",
+    "createdAt": 22,
+    "english": "\"s\" as in sun",
+    "korean": "ㅅ",
+    "notes": "Basic consonant. Becomes \"sh\" before 이.",
+    "romanization": "s"
+  },
+  {
+    "id": "023_ieung",
+    "category": "Consonants",
+    "createdAt": 23,
+    "english": "silent at start · \"ng\" as in sing at end",
+    "korean": "ㅇ",
+    "notes": "Placeholder at syllable start. Nasal at end.",
+    "romanization": "ng / silent"
+  },
+  {
+    "id": "024_jieut",
+    "category": "Consonants",
+    "createdAt": 24,
+    "english": "\"j\" as in joy",
+    "korean": "ㅈ",
+    "notes": "Basic consonant.",
+    "romanization": "j"
+  },
+  {
+    "id": "025_hieut",
+    "category": "Consonants",
+    "createdAt": 25,
+    "english": "\"h\" as in hat",
+    "korean": "ㅎ",
+    "notes": "Basic consonant. Can be silent between vowels.",
+    "romanization": "h"
+  },
+  {
+    "id": "026_ya",
+    "category": "Compound Vowels",
+    "createdAt": 26,
+    "english": "\"ya\" as in yard",
+    "korean": "야",
+    "notes": "Week 2. ㅇ + ㅑ",
+    "romanization": "ya"
+  },
+  {
+    "id": "027_yeo",
+    "category": "Compound Vowels",
+    "createdAt": 27,
+    "english": "\"yuh\" — y + eo",
+    "korean": "여",
+    "notes": "Week 2. ㅇ + ㅕ",
+    "romanization": "yeo"
+  },
+  {
+    "id": "028_yo",
+    "category": "Compound Vowels",
+    "createdAt": 28,
+    "english": "\"yo\" as in yoga",
+    "korean": "요",
+    "notes": "Week 2. ㅇ + ㅛ",
+    "romanization": "yo"
+  },
+  {
+    "id": "029_yu",
+    "category": "Compound Vowels",
+    "createdAt": 29,
+    "english": "\"yoo\" as in you",
+    "korean": "유",
+    "notes": "Week 2. ㅇ + ㅠ",
+    "romanization": "yu"
+  },
+  {
+    "id": "030_yae",
+    "category": "Compound Vowels",
+    "createdAt": 30,
+    "english": "\"yae\" — y + ae",
+    "korean": "얘",
+    "notes": "Week 2. ㅇ + ㅒ",
+    "romanization": "yae"
+  },
+  {
+    "id": "031_ye",
+    "category": "Compound Vowels",
+    "createdAt": 31,
+    "english": "\"ye\" as in yes",
+    "korean": "예",
+    "notes": "Week 2. ㅇ + ㅖ",
+    "romanization": "ye"
+  },
+  {
+    "id": "032_wa",
+    "category": "Compound Vowels",
+    "createdAt": 32,
+    "english": "\"wa\" as in want",
+    "korean": "와",
+    "notes": "Week 2. ㅇ + ㅘ",
+    "romanization": "wa"
+  },
+  {
+    "id": "033_wae",
+    "category": "Compound Vowels",
+    "createdAt": 33,
+    "english": "\"wae\" as in wax",
+    "korean": "왜",
+    "notes": "Week 2. ㅇ + ㅙ",
+    "romanization": "wae"
+  },
+  {
+    "id": "034_oe",
+    "category": "Compound Vowels",
+    "createdAt": 34,
+    "english": "\"we\" — sounds like we",
+    "korean": "외",
+    "notes": "Week 2. ㅇ + ㅚ. Often pronounced same as 웨.",
+    "romanization": "oe"
+  },
+  {
+    "id": "035_wo",
+    "category": "Compound Vowels",
+    "createdAt": 35,
+    "english": "\"wuh\" — w + eo",
+    "korean": "워",
+    "notes": "Week 2. ㅇ + ㅝ",
+    "romanization": "wo"
+  },
+  {
+    "id": "036_we",
+    "category": "Compound Vowels",
+    "createdAt": 36,
+    "english": "\"we\" as in wet",
+    "korean": "웨",
+    "notes": "Week 2. ㅇ + ㅞ",
+    "romanization": "we"
+  },
+  {
+    "id": "037_wi",
+    "category": "Compound Vowels",
+    "createdAt": 37,
+    "english": "\"wi\" as in week",
+    "korean": "위",
+    "notes": "Week 2. ㅇ + ㅟ",
+    "romanization": "wi"
+  },
+  {
+    "id": "038_ui",
+    "category": "Compound Vowels",
+    "createdAt": 38,
+    "english": "\"eui\" — combination of 으 + 이",
+    "korean": "의",
+    "notes": "Week 2. Tricky sound! Start with 으, glide to 이.",
+    "romanization": "ui"
+  },
+  {
+    "id": "039_kieuk",
+    "category": "Aspirated Consonants",
+    "createdAt": 39,
+    "english": "aspirated \"k\" — strong breath puff",
+    "korean": "ㅋ",
+    "notes": "Week 2. Stronger than ㄱ, with a puff of air.",
+    "romanization": "k"
+  },
+  {
+    "id": "040_tieut",
+    "category": "Aspirated Consonants",
+    "createdAt": 40,
+    "english": "aspirated \"t\" — strong breath puff",
+    "korean": "ㅌ",
+    "notes": "Week 2. Stronger than ㄷ, with a puff of air.",
+    "romanization": "t"
+  },
+  {
+    "id": "041_pieup",
+    "category": "Aspirated Consonants",
+    "createdAt": 41,
+    "english": "aspirated \"p\" — strong breath puff",
+    "korean": "ㅍ",
+    "notes": "Week 2. Stronger than ㅂ, with a puff of air.",
+    "romanization": "p"
+  },
+  {
+    "id": "042_chieut",
+    "category": "Aspirated Consonants",
+    "createdAt": 42,
+    "english": "aspirated \"ch\" as in church",
+    "korean": "ㅊ",
+    "notes": "Week 2. Stronger than ㅈ, with a puff of air.",
+    "romanization": "ch"
+  },
+  {
+    "id": "043_ssanggiyeok",
+    "category": "Double Consonants",
+    "createdAt": 43,
+    "english": "tense \"kk\" — stronger, no air puff",
+    "korean": "ㄲ",
+    "notes": "Week 2. Tense version of ㄱ. Throat tightens.",
+    "romanization": "kk"
+  },
+  {
+    "id": "044_ssangdigeut",
+    "category": "Double Consonants",
+    "createdAt": 44,
+    "english": "tense \"tt\" — stronger, no air puff",
+    "korean": "ㄸ",
+    "notes": "Week 2. Tense version of ㄷ.",
+    "romanization": "tt"
+  },
+  {
+    "id": "045_ssangbieup",
+    "category": "Double Consonants",
+    "createdAt": 45,
+    "english": "tense \"pp\" — stronger, no air puff",
+    "korean": "ㅃ",
+    "notes": "Week 2. Tense version of ㅂ.",
+    "romanization": "pp"
+  },
+  {
+    "id": "046_ssangsiot",
+    "category": "Double Consonants",
+    "createdAt": 46,
+    "english": "tense \"ss\" — sharper than ㅅ",
+    "korean": "ㅆ",
+    "notes": "Week 2. Tense version of ㅅ.",
+    "romanization": "ss"
+  },
+  {
+    "id": "047_ssangjieut",
+    "category": "Double Consonants",
+    "createdAt": 47,
+    "english": "tense \"jj\" — stronger, no air puff",
+    "korean": "ㅉ",
+    "notes": "Week 2. Tense version of ㅈ.",
+    "romanization": "jj"
+  },
+  {
+    "id": "048_batchim_k",
+    "category": "Batchim (받침)",
+    "createdAt": 48,
+    "english": "Batchim sounds like K",
+    "korean": "ㄱ ㅋ ㄲ",
+    "notes": "ㄱ ㅋ ㄲ at the end of a syllable all sound like K. Ex: 북 (buk), 부엌 (buek)",
+    "romanization": "K"
+  },
+  {
+    "id": "049_batchim_n",
+    "category": "Batchim (받침)",
+    "createdAt": 49,
+    "english": "Batchim sounds like N",
+    "korean": "ㄴ",
+    "notes": "ㄴ at the end of a syllable sounds like N. Ex: 산 (san)",
+    "romanization": "N"
+  },
+  {
+    "id": "050_batchim_t",
+    "category": "Batchim (받침)",
+    "createdAt": 50,
+    "english": "Batchim sounds like T",
+    "korean": "ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ",
+    "notes": "7 consonants! ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ all sound like T at syllable end. The biggest group to memorize.",
+    "romanization": "T"
+  },
+  {
+    "id": "051_batchim_l",
+    "category": "Batchim (받침)",
+    "createdAt": 51,
+    "english": "Batchim sounds like L",
+    "korean": "ㄹ",
+    "notes": "ㄹ at the end of a syllable sounds like L (not R). Ex: 달 (dal = moon)",
+    "romanization": "L"
+  },
+  {
+    "id": "052_batchim_m",
+    "category": "Batchim (받침)",
+    "createdAt": 52,
+    "english": "Batchim sounds like M",
+    "korean": "ㅁ",
+    "notes": "ㅁ at the end of a syllable sounds like M. Ex: 맘 (mam = heart)",
+    "romanization": "M"
+  },
+  {
+    "id": "053_batchim_p",
+    "category": "Batchim (받침)",
+    "createdAt": 53,
+    "english": "Batchim sounds like P",
+    "korean": "ㅂ ㅍ",
+    "notes": "ㅂ ㅍ at the end of a syllable both sound like P. Ex: 입 (ip = mouth)",
+    "romanization": "P"
+  },
+  {
+    "id": "054_batchim_ng",
+    "category": "Batchim (받침)",
+    "createdAt": 54,
+    "english": "Batchim sounds like NG",
+    "korean": "ㅇ",
+    "notes": "ㅇ at the end of a syllable sounds like NG (as in sing). Ex: 강 (gang = river)",
+    "romanization": "NG"
+  },
+  {
+    "id": "055_hyeo",
+    "category": "Body",
+    "createdAt": 55,
+    "english": "tongue",
+    "korean": "혀",
+    "notes": "Speech organ. Used in pronunciation practice.",
+    "romanization": "hyeo"
+  },
+  {
+    "id": "056_ipsul",
+    "category": "Body",
+    "createdAt": 56,
+    "english": "lips",
+    "korean": "입술",
+    "notes": "Speech organ. 입 (mouth) + 술 (hair/fur) = lips.",
+    "romanization": "ipsul"
+  },
+  {
+    "id": "057_i_teeth",
+    "category": "Body",
+    "createdAt": 57,
+    "english": "teeth",
+    "korean": "이",
+    "notes": "Speech organ. Same spelling as the vowel 이 but here means teeth.",
+    "romanization": "i"
+  },
+  {
+    "id": "058_mokgumeong",
+    "category": "Body",
+    "createdAt": 58,
+    "english": "throat",
+    "korean": "목구멍",
+    "notes": "Speech organ. 목 (neck/throat) + 구멍 (hole/opening).",
+    "romanization": "mokgumeong"
+  },
+  {
+    "id": "059_saja",
+    "category": "Animals",
+    "createdAt": 59,
+    "english": "lion",
+    "korean": "사자",
+    "notes": "사 (sa) + 자 (ja). New category: Animals!",
+    "romanization": "saja"
+  },
+  {
+    "id": "060_jadu",
+    "category": "Food",
+    "createdAt": 60,
+    "english": "plum",
+    "korean": "자두",
+    "notes": "",
+    "romanization": "jadu"
+  },
+  {
+    "id": "061_ko",
+    "category": "Body",
+    "createdAt": 61,
+    "english": "nose",
+    "korean": "코",
+    "notes": "Short word! Just one syllable: ㅋ + ㅗ",
+    "romanization": "ko"
+  },
+  {
+    "id": "062_ki",
+    "category": "Body",
+    "createdAt": 62,
+    "english": "height / stature",
+    "korean": "키",
+    "notes": "Also means key (door key). Context decides the meaning.",
+    "romanization": "ki"
+  },
+  {
+    "id": "card_059",
+    "category": "Food",
+    "createdAt": "2026-09-09T00:30:00Z",
+    "english": "cookie",
+    "korean": "쿠키",
+    "notes": "",
+    "romanization": "kuki"
+  },
+  {
+    "id": "card_060",
+    "category": "Food",
+    "createdAt": "2026-09-09T00:31:00Z",
+    "english": "tomato",
+    "korean": "토마토",
+    "notes": "",
+    "romanization": "tomato"
+  },
+  {
+    "id": "card_061",
+    "category": "Food",
+    "createdAt": "2026-09-09T01:00:00Z",
+    "english": "green onion / scallion",
+    "korean": "파",
+    "notes": "",
+    "romanization": "pa"
+  },
+  {
+    "id": "card_062",
+    "category": "Body",
+    "createdAt": "2026-09-09T01:10:00Z",
+    "english": "blood",
+    "korean": "피",
+    "notes": "",
+    "romanization": "pi"
+  },
+  {
+    "id": "card_063",
+    "category": "Food",
+    "createdAt": "2026-09-09T01:20:00Z",
+    "english": "coffee",
+    "korean": "커피",
+    "notes": "",
+    "romanization": "keopi"
+  },
+  {
+    "id": "card_064",
+    "category": "Food",
+    "createdAt": "2026-09-09T01:30:00Z",
+    "english": "grape",
+    "korean": "포도",
+    "notes": "",
+    "romanization": "podo"
+  },
+  {
+    "id": "card_065",
+    "category": "Food",
+    "createdAt": "2026-09-09T01:40:00Z",
+    "english": "tea / car",
+    "korean": "차",
+    "notes": "Also means car (vehicle). Context decides the meaning.",
+    "romanization": "cha"
+  },
+  {
+    "id": "card_066",
+    "category": "Food",
+    "createdAt": "2026-09-09T01:50:00Z",
+    "english": "cheese",
+    "korean": "치즈",
+    "notes": "",
+    "romanization": "chijeu"
+  },
+  {
+    "id": "card_067",
+    "category": "Clothing",
+    "createdAt": "2026-09-09T02:00:00Z",
+    "english": "skirt",
+    "korean": "치마",
+    "notes": "",
+    "romanization": "chima"
+  },
+  {
+    "id": "card_068",
+    "category": "Home",
+    "createdAt": "2026-09-09T02:10:00Z",
+    "english": "fork",
+    "korean": "포크",
+    "notes": "",
+    "romanization": "pokeu"
+  },
+  {
+    "id": "card_069",
+    "category": "Activities",
+    "createdAt": "2026-09-09T02:11:00Z",
+    "english": "sports",
+    "korean": "스포츠",
+    "notes": "",
+    "romanization": "seupocheu"
+  },
+  {
+    "id": "card_070",
+    "category": "Food",
+    "createdAt": "2026-09-09T02:20:00Z",
+    "english": "pizza",
+    "korean": "피자",
+    "notes": "",
+    "romanization": "pija"
+  },
+  {
+    "id": "card_071",
+    "category": "Food",
+    "createdAt": "2026-09-09T02:21:00Z",
+    "english": "pasta",
+    "korean": "파스타",
+    "notes": "",
+    "romanization": "paseuta"
+  },
+  {
+    "id": "card_072",
+    "category": "Activities",
+    "createdAt": "2026-09-09T02:30:00Z",
+    "english": "piano",
+    "korean": "피아노",
+    "notes": "",
+    "romanization": "piano"
+  },
+  {
+    "id": "card_073",
+    "category": "Other",
+    "createdAt": "2026-09-09T02:31:00Z",
+    "english": "café",
+    "korean": "카페",
+    "notes": "",
+    "romanization": "kape"
+  },
+  {
+    "id": "card_074",
+    "category": "Other",
+    "createdAt": "2026-09-09T02:40:00Z",
+    "english": "waiter",
+    "korean": "웨이터",
+    "notes": "",
+    "romanization": "weiteo"
+  },
+  {
+    "id": "card_075",
+    "category": "Food",
+    "createdAt": "2026-09-09T02:41:00Z",
+    "english": "chocolate",
+    "korean": "초코",
+    "notes": "Short for 초콜릿 (chokollit)",
+    "romanization": "choko"
+  },
+  {
+    "id": "card_076",
+    "category": "Activities",
+    "createdAt": "2026-09-09T10:00:00Z",
+    "english": "guitar",
+    "korean": "기타",
+    "notes": "",
+    "romanization": "gita"
+  },
+  {
+    "id": "card_077",
+    "category": "Other",
+    "createdAt": "2026-09-09T10:01:00Z",
+    "english": "camera",
+    "korean": "카메라",
+    "notes": "",
+    "romanization": "kamera"
+  },
+  {
+    "id": "card_078",
+    "category": "Animals",
+    "createdAt": "2026-09-09T10:10:00Z",
+    "english": "tail",
+    "korean": "꼬리",
+    "notes": "Double consonant ㄲ",
+    "romanization": "kkori"
+  },
+  {
+    "id": "card_079",
+    "category": "Other",
+    "createdAt": "2026-09-09T10:20:00Z",
+    "english": "little kid / toddler",
+    "korean": "꼬마",
+    "notes": "Double consonant ㄲ",
+    "romanization": "kkoma"
+  },
+  {
+    "id": "card_080",
+    "category": "Food",
+    "createdAt": "2026-09-09T10:30:00Z",
+    "english": "rice (uncooked)",
+    "korean": "쌀",
+    "notes": "Double consonant ㅆ",
+    "romanization": "ssal"
+  },
+  {
+    "id": "card_081",
+    "category": "Other",
+    "createdAt": "2026-09-09T10:40:00Z",
+    "english": "again / also",
+    "korean": "또",
+    "notes": "Double consonant ㄸ",
+    "romanization": "tto"
+  },
+  {
+    "id": "card_082",
+    "category": "Other",
+    "createdAt": "2026-09-09T10:41:00Z",
+    "english": "again / once more",
+    "korean": "다시",
+    "notes": "",
+    "romanization": "dasi"
+  },
+  {
+    "id": "card_083",
+    "category": "Clothing",
+    "createdAt": "2026-09-09T10:50:00Z",
+    "english": "belt",
+    "korean": "허리띄",
+    "notes": "허리 (waist) + 띄 (band)",
+    "romanization": "heoritti"
+  },
+  {
+    "id": "card_084",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:00:00Z",
+    "english": "dad / daddy",
+    "korean": "아빠",
+    "notes": "Double consonant ㅃ; informal",
+    "romanization": "appa"
+  },
+  {
+    "id": "card_085",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:10:00Z",
+    "english": "older brother (used by females)",
+    "korean": "오빠",
+    "notes": "Double consonant ㅃ",
+    "romanization": "oppa"
+  },
+  {
+    "id": "card_086",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:00Z",
+    "english": "mom / mommy",
+    "korean": "엄마",
+    "notes": "informal",
+    "romanization": "eomma"
+  },
+  {
+    "id": "card_087",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:01Z",
+    "english": "father",
+    "korean": "아버지",
+    "notes": "formal/respectful",
+    "romanization": "abeoji"
+  },
+  {
+    "id": "card_088",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:02Z",
+    "english": "mother",
+    "korean": "어머니",
+    "notes": "formal/respectful",
+    "romanization": "eomeoni"
+  },
+  {
+    "id": "card_089",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:03Z",
+    "english": "older brother (used by males)",
+    "korean": "형",
+    "notes": "",
+    "romanization": "hyeong"
+  },
+  {
+    "id": "card_090",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:04Z",
+    "english": "older sister (used by males)",
+    "korean": "누나",
+    "notes": "",
+    "romanization": "nuna"
+  },
+  {
+    "id": "card_091",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:05Z",
+    "english": "older sister (used by females)",
+    "korean": "언니",
+    "notes": "",
+    "romanization": "eonni"
+  },
+  {
+    "id": "card_092",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:06Z",
+    "english": "younger brother",
+    "korean": "남동생",
+    "notes": "",
+    "romanization": "namdongsaeng"
+  },
+  {
+    "id": "card_093",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:07Z",
+    "english": "younger sister",
+    "korean": "여동생",
+    "notes": "",
+    "romanization": "yeodongsaeng"
+  },
+  {
+    "id": "card_094",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:08Z",
+    "english": "grandfather",
+    "korean": "할아버지",
+    "notes": "",
+    "romanization": "harabeoji"
+  },
+  {
+    "id": "card_095",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:09Z",
+    "english": "grandmother",
+    "korean": "할머니",
+    "notes": "",
+    "romanization": "halmeoni"
+  },
+  {
+    "id": "card_096",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:10Z",
+    "english": "son",
+    "korean": "아들",
+    "notes": "",
+    "romanization": "adeul"
+  },
+  {
+    "id": "card_097",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:11Z",
+    "english": "daughter",
+    "korean": "딸",
+    "notes": "",
+    "romanization": "ttal"
+  },
+  {
+    "id": "card_098",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:12Z",
+    "english": "husband",
+    "korean": "남편",
+    "notes": "",
+    "romanization": "nampyeon"
+  },
+  {
+    "id": "card_099",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:13Z",
+    "english": "wife",
+    "korean": "아내",
+    "notes": "",
+    "romanization": "anae"
+  },
+  {
+    "id": "card_100",
+    "category": "Family",
+    "createdAt": "2026-09-09T11:20:14Z",
+    "english": "family",
+    "korean": "가족",
+    "notes": "",
+    "romanization": "gajok"
+  },
+  {
+    "id": "card_101",
+    "category": "Other",
+    "createdAt": "2026-09-09T11:30:00Z",
+    "english": "quickly / hurry",
+    "korean": "빨리",
+    "notes": "Double consonant ㅃ; adverb",
+    "romanization": "ppalli"
+  },
+  {
+    "id": "card_102",
+    "category": "Body",
+    "createdAt": "2026-09-09T11:40:00Z",
+    "english": "bone",
+    "korean": "뼈",
+    "notes": "Double consonant ㅃ",
+    "romanization": "ppyeo"
+  },
+  {
+    "id": "card_103",
+    "category": "Other",
+    "createdAt": "2026-09-09T11:50:00Z",
+    "english": "cheap / inexpensive",
+    "korean": "싸요",
+    "notes": "Double consonant ㅆ; polite form of 싸다",
+    "romanization": "ssayo"
+  },
+  {
+    "id": "card_104",
+    "category": "Other",
+    "createdAt": "2026-09-09T11:50:01Z",
+    "english": "expensive",
+    "korean": "비싸요",
+    "notes": "Double consonant ㅆ; polite form of 비싸다",
+    "romanization": "bissayo"
+  },
+  {
+    "id": "card_105",
+    "category": "Other",
+    "createdAt": "2026-09-09T12:00:00Z",
+    "english": "trash / garbage",
+    "korean": "쓰레기",
+    "notes": "Double consonant ㅆ",
+    "romanization": "sseuregi"
+  },
+  {
+    "id": "card_106",
+    "category": "Food",
+    "createdAt": "2026-09-09T12:10:00Z",
+    "english": "stew",
+    "korean": "찌개",
+    "notes": "Double consonant ㅉ; e.g. 김치찌개",
+    "romanization": "jjigae"
+  },
+  {
+    "id": "card_107",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:20:00Z",
+    "english": "double ㄱ (ssang-giyeok)",
+    "korean": "ㄲ",
+    "notes": "까, 꼬, 꽌",
+    "romanization": "kk"
+  },
+  {
+    "id": "card_108",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:20:01Z",
+    "english": "double ㄷ (ssang-digeut)",
+    "korean": "ㄸ",
+    "notes": "따, 또, 띠",
+    "romanization": "tt"
+  },
+  {
+    "id": "card_109",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:20:02Z",
+    "english": "double ㅂ (ssang-bieup)",
+    "korean": "ㅃ",
+    "notes": "빠, 뽐, 삐",
+    "romanization": "pp"
+  },
+  {
+    "id": "card_110",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:20:03Z",
+    "english": "double ㅅ (ssang-siot)",
+    "korean": "ㅆ",
+    "notes": "싸, 쏘, 씨",
+    "romanization": "ss"
+  },
+  {
+    "id": "card_111",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:20:04Z",
+    "english": "double ㅈ (ssang-jieut)",
+    "korean": "ㅉ",
+    "notes": "쩸, 쫐, 찌",
+    "romanization": "jj"
+  },
+  {
+    "id": "card_112",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:00Z",
+    "english": "syllable (kka)",
+    "korean": "까",
+    "notes": "ㄲ + ㅏ",
+    "romanization": "kka"
+  },
+  {
+    "id": "card_113",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:01Z",
+    "english": "syllable (kko)",
+    "korean": "꼬",
+    "notes": "ㄲ + ㅗ; e.g. 꼬리 (tail)",
+    "romanization": "kko"
+  },
+  {
+    "id": "card_114",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:02Z",
+    "english": "syllable (kki)",
+    "korean": "꽌",
+    "notes": "ㄲ + ㅣ; e.g. 꽌니 (meal)",
+    "romanization": "kki"
+  },
+  {
+    "id": "card_115",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:03Z",
+    "english": "syllable (tta)",
+    "korean": "따",
+    "notes": "ㄸ + ㅏ; e.g. 따뜻하다 (warm)",
+    "romanization": "tta"
+  },
+  {
+    "id": "card_116",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:04Z",
+    "english": "syllable (tto)",
+    "korean": "또",
+    "notes": "ㄸ + ㅗ; also = again",
+    "romanization": "tto"
+  },
+  {
+    "id": "card_117",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:05Z",
+    "english": "syllable (tti)",
+    "korean": "띠",
+    "notes": "ㄸ + ㅣ; e.g. 허리띄 (belt)",
+    "romanization": "tti"
+  },
+  {
+    "id": "card_118",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:06Z",
+    "english": "syllable (ppa)",
+    "korean": "빠",
+    "notes": "ㅃ + ㅏ; e.g. 아빠 (dad)",
+    "romanization": "ppa"
+  },
+  {
+    "id": "card_119",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:07Z",
+    "english": "syllable (ppo)",
+    "korean": "뽐",
+    "notes": "ㅃ + ㅗ; e.g. 뽐뽐 (kiss)",
+    "romanization": "ppo"
+  },
+  {
+    "id": "card_120",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:08Z",
+    "english": "syllable (ppi)",
+    "korean": "삐",
+    "notes": "ㅃ + ㅣ; e.g. 삐지다 (sulk)",
+    "romanization": "ppi"
+  },
+  {
+    "id": "card_121",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:09Z",
+    "english": "syllable (ssa)",
+    "korean": "싸",
+    "notes": "ㅆ + ㅏ; e.g. 싸요 (cheap)",
+    "romanization": "ssa"
+  },
+  {
+    "id": "card_122",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:10Z",
+    "english": "syllable (sso)",
+    "korean": "쏘",
+    "notes": "ㅆ + ㅗ; e.g. 쏘다 (shoot)",
+    "romanization": "sso"
+  },
+  {
+    "id": "card_123",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:11Z",
+    "english": "Mr./Ms. (honorific)",
+    "korean": "씨",
+    "notes": "ㅆ + ㅣ; e.g. 김씨 (Mr./Ms. Kim)",
+    "romanization": "ssi"
+  },
+  {
+    "id": "card_124",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:12Z",
+    "english": "salty / to squeeze",
+    "korean": "쩸",
+    "notes": "ㅉ + ㅏ; 쩸다 = salty",
+    "romanization": "jja"
+  },
+  {
+    "id": "card_125",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:13Z",
+    "english": "syllable (jjo)",
+    "korean": "쫐",
+    "notes": "ㅉ + ㅗ; e.g. 쫐개다 (split)",
+    "romanization": "jjo"
+  },
+  {
+    "id": "card_126",
+    "category": "Double Consonants",
+    "createdAt": "2026-09-09T12:30:14Z",
+    "english": "syllable (jji)",
+    "korean": "찌",
+    "notes": "ㅉ + ㅣ; e.g. 찌개 (stew)",
+    "romanization": "jji"
+  },
+  {
+    "id": "card_127",
+    "category": "Nature",
+    "createdAt": "2026-09-09T12:40:00Z",
+    "english": "sky / heaven / spirit",
+    "korean": "하늘",
+    "notes": "One of the 3 core concepts: 하늘, 땅, 사람",
+    "romanization": "haneul"
+  },
+  {
+    "id": "card_128",
+    "category": "Nature",
+    "createdAt": "2026-09-09T12:40:01Z",
+    "english": "earth / ground / real world",
+    "korean": "땅",
+    "notes": "Double consonant ㄸ; one of 하늘, 땅, 사람",
+    "romanization": "ttang"
+  },
+  {
+    "id": "card_129",
+    "category": "Other",
+    "createdAt": "2026-09-09T12:40:02Z",
+    "english": "people / person",
+    "korean": "사람",
+    "notes": "One of the 3 core concepts: 하늘, 땅, 사람",
+    "romanization": "saram"
+  },
+  {
+    "id": "card_130",
+    "category": "Food",
+    "createdAt": "2026-09-09T12:50:00Z",
+    "english": "milk",
+    "korean": "우유",
+    "notes": "",
+    "romanization": "uyu"
+  },
+  {
+    "id": "card_131",
+    "category": "Animals",
+    "createdAt": "2026-09-09T12:50:01Z",
+    "english": "fox",
+    "korean": "여우",
+    "notes": "",
+    "romanization": "yeou"
+  },
+  {
+    "id": "card_132",
+    "category": "Body",
+    "createdAt": "2026-09-09T13:00:00Z",
+    "english": "head / hair",
+    "korean": "머리",
+    "notes": "",
+    "romanization": "meori"
+  },
+  {
+    "id": "sejong_001",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:00Z",
+    "english": "hello (formal)",
+    "korean": "안녕하세요",
+    "notes": "Sejong 1A Unit 1 · Most common greeting",
+    "romanization": "annyeonghaseyo"
+  },
+  {
+    "id": "sejong_002",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:01Z",
+    "english": "thank you (formal)",
+    "korean": "감사합니다",
+    "notes": "Sejong 1A Unit 1",
+    "romanization": "gamsahamnida"
+  },
+  {
+    "id": "sejong_003",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:02Z",
+    "english": "I'm sorry (formal)",
+    "korean": "죄송합니다",
+    "notes": "Sejong 1A Unit 1",
+    "romanization": "joesonghamnida"
+  },
+  {
+    "id": "sejong_004",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:03Z",
+    "english": "yes",
+    "korean": "네",
+    "notes": "Sejong 1A Unit 1 · Also written 예 (ye)",
+    "romanization": "ne"
+  },
+  {
+    "id": "sejong_005",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:04Z",
+    "english": "no",
+    "korean": "아니요",
+    "notes": "Sejong 1A Unit 1",
+    "romanization": "aniyo"
+  },
+  {
+    "id": "sejong_006",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:05Z",
+    "english": "nice to meet you",
+    "korean": "만나서 반갑습니다",
+    "notes": "Sejong 1A Unit 1",
+    "romanization": "mannaseo bangapseumnida"
+  },
+  {
+    "id": "sejong_007",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:06Z",
+    "english": "goodbye (to someone leaving)",
+    "korean": "안녕히 가세요",
+    "notes": "Sejong 1A Unit 1 · Said by the one staying",
+    "romanization": "annyeonghi gaseyo"
+  },
+  {
+    "id": "sejong_008",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:00:07Z",
+    "english": "goodbye (to someone staying)",
+    "korean": "안녕히 계세요",
+    "notes": "Sejong 1A Unit 1 · Said by the one leaving",
+    "romanization": "annyeonghi gyeseyo"
+  },
+  {
+    "id": "sejong_009",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:08Z",
+    "english": "I (humble/formal)",
+    "korean": "저",
+    "notes": "Sejong 1A Unit 2 · Humble form; casual = 나 (na)",
+    "romanization": "jeo"
+  },
+  {
+    "id": "sejong_010",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:09Z",
+    "english": "name",
+    "korean": "이름",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "ireum"
+  },
+  {
+    "id": "sejong_011",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:10Z",
+    "english": "student",
+    "korean": "학생",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "haksaeng"
+  },
+  {
+    "id": "sejong_012",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:11Z",
+    "english": "teacher (honorific)",
+    "korean": "선생님",
+    "notes": "Sejong 1A Unit 2 · -님 is honorific suffix",
+    "romanization": "seonsaengnim"
+  },
+  {
+    "id": "sejong_013",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:12Z",
+    "english": "office worker",
+    "korean": "회사원",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "hoesawon"
+  },
+  {
+    "id": "sejong_014",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:13Z",
+    "english": "doctor",
+    "korean": "의사",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "uisa"
+  },
+  {
+    "id": "sejong_015",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:14Z",
+    "english": "friend",
+    "korean": "친구",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "chingu"
+  },
+  {
+    "id": "sejong_016",
+    "category": "Other",
+    "createdAt": "2026-09-10T10:00:15Z",
+    "english": "phone number",
+    "korean": "전화번호",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "jeonhwabeonho"
+  },
+  {
+    "id": "sejong_017",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:16Z",
+    "english": "Korea",
+    "korean": "한국",
+    "notes": "Sejong 1A Unit 2 · 한국 사람 = Korean person",
+    "romanization": "hanguk"
+  },
+  {
+    "id": "sejong_018",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:17Z",
+    "english": "Japan",
+    "korean": "일본",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "ilbon"
+  },
+  {
+    "id": "sejong_019",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:18Z",
+    "english": "China",
+    "korean": "중국",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "jungguk"
+  },
+  {
+    "id": "sejong_020",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:19Z",
+    "english": "America / USA",
+    "korean": "미국",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "miguk"
+  },
+  {
+    "id": "sejong_021",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:20Z",
+    "english": "Vietnam",
+    "korean": "베트남",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "beteunam"
+  },
+  {
+    "id": "sejong_022",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:21Z",
+    "english": "Thailand",
+    "korean": "태국",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "taeguk"
+  },
+  {
+    "id": "sejong_023",
+    "category": "Countries",
+    "createdAt": "2026-09-10T10:00:22Z",
+    "english": "Germany",
+    "korean": "독일",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "dogil"
+  },
+  {
+    "id": "sejong_024",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:00Z",
+    "english": "book",
+    "korean": "책",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "chaek"
+  },
+  {
+    "id": "sejong_025",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:01Z",
+    "english": "bag",
+    "korean": "가방",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "gabang"
+  },
+  {
+    "id": "sejong_026",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:02Z",
+    "english": "pencil",
+    "korean": "연필",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "yeonpil"
+  },
+  {
+    "id": "sejong_027",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:03Z",
+    "english": "eraser",
+    "korean": "지우개",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "jiugae"
+  },
+  {
+    "id": "sejong_028",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:04Z",
+    "english": "computer",
+    "korean": "컴퓨터",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "keompyuteo"
+  },
+  {
+    "id": "sejong_029",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:05Z",
+    "english": "cell phone",
+    "korean": "휴대폰",
+    "notes": "Sejong 1A Unit 3 · Also 핸드폰 (haendeupon)",
+    "romanization": "hyudaepon"
+  },
+  {
+    "id": "sejong_030",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:06Z",
+    "english": "clock / watch",
+    "korean": "시계",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "sigye"
+  },
+  {
+    "id": "sejong_031",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:07Z",
+    "english": "umbrella",
+    "korean": "우산",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "usan"
+  },
+  {
+    "id": "sejong_032",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:08Z",
+    "english": "chair",
+    "korean": "의자",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "uija"
+  },
+  {
+    "id": "sejong_033",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:09Z",
+    "english": "desk",
+    "korean": "책상",
+    "notes": "Sejong 1A Unit 3 · 책 (book) + 상 (table)",
+    "romanization": "chaeksang"
+  },
+  {
+    "id": "sejong_034",
+    "category": "Objects",
+    "createdAt": "2026-09-10T10:01:10Z",
+    "english": "dictionary",
+    "korean": "사전",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "sajeon"
+  },
+  {
+    "id": "sejong_035",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:01:11Z",
+    "english": "water",
+    "korean": "물",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "mul"
+  },
+  {
+    "id": "sejong_036",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:01:12Z",
+    "english": "bread",
+    "korean": "빵",
+    "notes": "Sejong 1A Unit 5 · Double consonant ㅃ",
+    "romanization": "ppang"
+  },
+  {
+    "id": "sejong_037",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:01:13Z",
+    "english": "rice (cooked) / meal",
+    "korean": "밥",
+    "notes": "Sejong 1A Unit 5 · Batchim ㅂ→P",
+    "romanization": "bap"
+  },
+  {
+    "id": "sejong_038",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:00Z",
+    "english": "one (native Korean)",
+    "korean": "하나",
+    "notes": "Sejong 1A Unit 4 · Used for counting items",
+    "romanization": "hana"
+  },
+  {
+    "id": "sejong_039",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:01Z",
+    "english": "two (native Korean)",
+    "korean": "둘",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "dul"
+  },
+  {
+    "id": "sejong_040",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:02Z",
+    "english": "three (native Korean)",
+    "korean": "셋",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "set"
+  },
+  {
+    "id": "sejong_041",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:03Z",
+    "english": "four (native Korean)",
+    "korean": "넷",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "net"
+  },
+  {
+    "id": "sejong_042",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:04Z",
+    "english": "five (native Korean)",
+    "korean": "다섯",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "daseot"
+  },
+  {
+    "id": "sejong_043",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:05Z",
+    "english": "six (native Korean)",
+    "korean": "여섯",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "yeoseot"
+  },
+  {
+    "id": "sejong_044",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:06Z",
+    "english": "seven (native Korean)",
+    "korean": "일곱",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "ilgop"
+  },
+  {
+    "id": "sejong_045",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:07Z",
+    "english": "eight (native Korean)",
+    "korean": "여덟",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "yeodeol"
+  },
+  {
+    "id": "sejong_046",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:08Z",
+    "english": "nine (native Korean)",
+    "korean": "아홉",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "ahop"
+  },
+  {
+    "id": "sejong_047",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:09Z",
+    "english": "ten (native Korean)",
+    "korean": "열",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "yeol"
+  },
+  {
+    "id": "sejong_048",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:10Z",
+    "english": "one (Sino-Korean)",
+    "korean": "일",
+    "notes": "Sejong 1A Unit 4 · Used for dates, money, phone #s",
+    "romanization": "il"
+  },
+  {
+    "id": "sejong_049",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:11Z",
+    "english": "two (Sino-Korean)",
+    "korean": "이",
+    "notes": "Sejong 1A Unit 4 · Context: 이 as number, not teeth",
+    "romanization": "i"
+  },
+  {
+    "id": "sejong_050",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:12Z",
+    "english": "three (Sino-Korean)",
+    "korean": "삼",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "sam"
+  },
+  {
+    "id": "sejong_051",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:13Z",
+    "english": "four (Sino-Korean)",
+    "korean": "사",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "sa"
+  },
+  {
+    "id": "sejong_052",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:14Z",
+    "english": "five (Sino-Korean)",
+    "korean": "오",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "o"
+  },
+  {
+    "id": "sejong_053",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:15Z",
+    "english": "six (Sino-Korean)",
+    "korean": "육",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "yuk"
+  },
+  {
+    "id": "sejong_054",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:16Z",
+    "english": "seven (Sino-Korean)",
+    "korean": "칠",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "chil"
+  },
+  {
+    "id": "sejong_055",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:17Z",
+    "english": "eight (Sino-Korean)",
+    "korean": "팔",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "pal"
+  },
+  {
+    "id": "sejong_056",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:18Z",
+    "english": "nine (Sino-Korean)",
+    "korean": "구",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "gu"
+  },
+  {
+    "id": "sejong_057",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:19Z",
+    "english": "ten (Sino-Korean)",
+    "korean": "십",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "sip"
+  },
+  {
+    "id": "sejong_058",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:20Z",
+    "english": "hundred",
+    "korean": "백",
+    "notes": "Sejong 1A Unit 4 · Sino-Korean",
+    "romanization": "baek"
+  },
+  {
+    "id": "sejong_059",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:21Z",
+    "english": "thousand",
+    "korean": "천",
+    "notes": "Sejong 1A Unit 4 · Sino-Korean",
+    "romanization": "cheon"
+  },
+  {
+    "id": "sejong_060",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:22Z",
+    "english": "ten thousand",
+    "korean": "만",
+    "notes": "Sejong 1A Unit 4 · Sino-Korean; 10,000 is a key unit",
+    "romanization": "man"
+  },
+  {
+    "id": "sejong_061",
+    "category": "Numbers",
+    "createdAt": "2026-09-10T10:02:23Z",
+    "english": "won (Korean currency)",
+    "korean": "원",
+    "notes": "Sejong 1A Unit 4 · 이천 원 = 2,000 won",
+    "romanization": "won"
+  },
+  {
+    "id": "sejong_062",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:00Z",
+    "english": "school",
+    "korean": "학교",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "hakgyo"
+  },
+  {
+    "id": "sejong_063",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:01Z",
+    "english": "company / office",
+    "korean": "회사",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "hoesa"
+  },
+  {
+    "id": "sejong_064",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:02Z",
+    "english": "house / home",
+    "korean": "집",
+    "notes": "Sejong 1A Unit 3 · Batchim ㅂ→P",
+    "romanization": "jip"
+  },
+  {
+    "id": "sejong_065",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:03Z",
+    "english": "store / shop",
+    "korean": "가게",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "gage"
+  },
+  {
+    "id": "sejong_066",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:04Z",
+    "english": "market",
+    "korean": "시장",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "sijang"
+  },
+  {
+    "id": "sejong_067",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:05Z",
+    "english": "restaurant",
+    "korean": "식당",
+    "notes": "Sejong 1A Unit 5",
+    "romanization": "sikdang"
+  },
+  {
+    "id": "sejong_068",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:06Z",
+    "english": "bank",
+    "korean": "은행",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "eunhaeng"
+  },
+  {
+    "id": "sejong_069",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:07Z",
+    "english": "hospital",
+    "korean": "병원",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "byeongwon"
+  },
+  {
+    "id": "sejong_070",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:08Z",
+    "english": "pharmacy",
+    "korean": "약국",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "yakguk"
+  },
+  {
+    "id": "sejong_071",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:09Z",
+    "english": "library",
+    "korean": "도서관",
+    "notes": "Sejong 1A Unit 7",
+    "romanization": "doseogwan"
+  },
+  {
+    "id": "sejong_072",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:10Z",
+    "english": "park",
+    "korean": "공원",
+    "notes": "Sejong 1A Unit 7",
+    "romanization": "gongwon"
+  },
+  {
+    "id": "sejong_073",
+    "category": "Places",
+    "createdAt": "2026-09-10T10:03:11Z",
+    "english": "convenience store",
+    "korean": "편의점",
+    "notes": "Sejong 1A Unit 4",
+    "romanization": "pyeonuijeom"
+  },
+  {
+    "id": "sejong_074",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:00Z",
+    "english": "to go",
+    "korean": "가다",
+    "notes": "Sejong 1A Unit 3 · 가요 (polite form)",
+    "romanization": "gada"
+  },
+  {
+    "id": "sejong_075",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:01Z",
+    "english": "to come",
+    "korean": "오다",
+    "notes": "Sejong 1A Unit 3 · 와요 (polite form)",
+    "romanization": "oda"
+  },
+  {
+    "id": "sejong_076",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:02Z",
+    "english": "to eat",
+    "korean": "먹다",
+    "notes": "Sejong 1A Unit 5 · 먹어요 (polite form)",
+    "romanization": "meokda"
+  },
+  {
+    "id": "sejong_077",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:03Z",
+    "english": "to drink",
+    "korean": "마시다",
+    "notes": "Sejong 1A Unit 5 · 마셔요 (polite form)",
+    "romanization": "masida"
+  },
+  {
+    "id": "sejong_078",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:04Z",
+    "english": "to see / to watch",
+    "korean": "보다",
+    "notes": "Sejong 1A Unit 7 · 봐요 (polite form)",
+    "romanization": "boda"
+  },
+  {
+    "id": "sejong_079",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:05Z",
+    "english": "to read",
+    "korean": "읽다",
+    "notes": "Sejong 1A Unit 7 · 읽어요; batchim ㄺ→K",
+    "romanization": "ikda"
+  },
+  {
+    "id": "sejong_080",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:06Z",
+    "english": "to write / to use",
+    "korean": "쓰다",
+    "notes": "Sejong 1A Unit 3 · Double ㅆ; 써요 (polite)",
+    "romanization": "sseuda"
+  },
+  {
+    "id": "sejong_081",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:07Z",
+    "english": "to listen / to hear",
+    "korean": "듣다",
+    "notes": "Sejong 1A Unit 7 · Irregular: 들어요 (polite)",
+    "romanization": "deutda"
+  },
+  {
+    "id": "sejong_082",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:08Z",
+    "english": "to speak / to talk",
+    "korean": "말하다",
+    "notes": "Sejong 1A Unit 2 · 말해요 (polite)",
+    "romanization": "malhada"
+  },
+  {
+    "id": "sejong_083",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:09Z",
+    "english": "to learn",
+    "korean": "배우다",
+    "notes": "Sejong 1A Unit 7 · 배워요 (polite)",
+    "romanization": "baeuda"
+  },
+  {
+    "id": "sejong_084",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:10Z",
+    "english": "to buy",
+    "korean": "사다",
+    "notes": "Sejong 1A Unit 4 · 사요 (polite)",
+    "romanization": "sada"
+  },
+  {
+    "id": "sejong_085",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:11Z",
+    "english": "to exist / to have",
+    "korean": "있다",
+    "notes": "Sejong 1A Unit 3 · 있어요 (polite); opposite: 없다",
+    "romanization": "itda"
+  },
+  {
+    "id": "sejong_086",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:12Z",
+    "english": "to not exist / to not have",
+    "korean": "없다",
+    "notes": "Sejong 1A Unit 3 · 없어요 (polite); opposite: 있다",
+    "romanization": "eopda"
+  },
+  {
+    "id": "sejong_087",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:13Z",
+    "english": "to do",
+    "korean": "하다",
+    "notes": "Sejong 1A Unit 6 · 해요 (polite); very versatile verb",
+    "romanization": "hada"
+  },
+  {
+    "id": "sejong_088",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:14Z",
+    "english": "to sleep",
+    "korean": "자다",
+    "notes": "Sejong 1A Unit 6 · 자요 (polite)",
+    "romanization": "jada"
+  },
+  {
+    "id": "sejong_089",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:15Z",
+    "english": "to get up / to wake up",
+    "korean": "일어나다",
+    "notes": "Sejong 1A Unit 6 · 일어나요 (polite)",
+    "romanization": "ireonada"
+  },
+  {
+    "id": "sejong_090",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:16Z",
+    "english": "to study",
+    "korean": "공부하다",
+    "notes": "Sejong 1A Unit 6 · 공부해요 (polite); 공부 = study",
+    "romanization": "gongbuhada"
+  },
+  {
+    "id": "sejong_091",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:17Z",
+    "english": "to exercise",
+    "korean": "운동하다",
+    "notes": "Sejong 1A Unit 7 · 운동해요 (polite); 운동 = exercise",
+    "romanization": "undonghada"
+  },
+  {
+    "id": "sejong_092",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:18Z",
+    "english": "to be good / to like",
+    "korean": "좋다",
+    "notes": "Sejong 1A Unit 7 · 좋아요 (polite)",
+    "romanization": "jota"
+  },
+  {
+    "id": "sejong_093",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:19Z",
+    "english": "to meet",
+    "korean": "만나다",
+    "notes": "Sejong 1A Unit 7 · 만나요 (polite)",
+    "romanization": "mannada"
+  },
+  {
+    "id": "sejong_094",
+    "category": "Verbs",
+    "createdAt": "2026-09-10T10:04:20Z",
+    "english": "to cook",
+    "korean": "요리하다",
+    "notes": "Sejong 1A Unit 7 · 요리해요 (polite); 요리 = cooking",
+    "romanization": "yorihada"
+  },
+  {
+    "id": "sejong_095",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:00Z",
+    "english": "o'clock / hour",
+    "korean": "시",
+    "notes": "Sejong 1A Unit 6 · 두 시 = 2 o'clock (native numbers)",
+    "romanization": "si"
+  },
+  {
+    "id": "sejong_096",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:01Z",
+    "english": "minute",
+    "korean": "분",
+    "notes": "Sejong 1A Unit 6 · 삼십 분 = 30 min (Sino numbers)",
+    "romanization": "bun"
+  },
+  {
+    "id": "sejong_097",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:02Z",
+    "english": "AM / morning",
+    "korean": "오전",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "ojeon"
+  },
+  {
+    "id": "sejong_098",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:03Z",
+    "english": "PM / afternoon",
+    "korean": "오후",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "ohu"
+  },
+  {
+    "id": "sejong_099",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:04Z",
+    "english": "morning / breakfast",
+    "korean": "아침",
+    "notes": "Sejong 1A Unit 6 · Also means breakfast",
+    "romanization": "achim"
+  },
+  {
+    "id": "sejong_100",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:05Z",
+    "english": "lunch",
+    "korean": "점심",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "jeomsim"
+  },
+  {
+    "id": "sejong_101",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:06Z",
+    "english": "evening / dinner",
+    "korean": "저녁",
+    "notes": "Sejong 1A Unit 6 · Also means dinner",
+    "romanization": "jeonyeok"
+  },
+  {
+    "id": "sejong_102",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:07Z",
+    "english": "now",
+    "korean": "지금",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "jigeum"
+  },
+  {
+    "id": "sejong_103",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:08Z",
+    "english": "today",
+    "korean": "오늘",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "oneul"
+  },
+  {
+    "id": "sejong_104",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:09Z",
+    "english": "tomorrow",
+    "korean": "내일",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "naeil"
+  },
+  {
+    "id": "sejong_105",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:10Z",
+    "english": "yesterday",
+    "korean": "어제",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "eoje"
+  },
+  {
+    "id": "sejong_106",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:11Z",
+    "english": "Monday",
+    "korean": "월요일",
+    "notes": "Sejong 1A Unit 7 · 월 = moon/month",
+    "romanization": "woryoil"
+  },
+  {
+    "id": "sejong_107",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:12Z",
+    "english": "Tuesday",
+    "korean": "화요일",
+    "notes": "Sejong 1A Unit 7 · 화 = fire",
+    "romanization": "hwayoil"
+  },
+  {
+    "id": "sejong_108",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:13Z",
+    "english": "Wednesday",
+    "korean": "수요일",
+    "notes": "Sejong 1A Unit 7 · 수 = water",
+    "romanization": "suyoil"
+  },
+  {
+    "id": "sejong_109",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:14Z",
+    "english": "Thursday",
+    "korean": "목요일",
+    "notes": "Sejong 1A Unit 7 · 목 = wood",
+    "romanization": "mogyoil"
+  },
+  {
+    "id": "sejong_110",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:15Z",
+    "english": "Friday",
+    "korean": "금요일",
+    "notes": "Sejong 1A Unit 7 · 금 = gold/metal",
+    "romanization": "geumyoil"
+  },
+  {
+    "id": "sejong_111",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:16Z",
+    "english": "Saturday",
+    "korean": "토요일",
+    "notes": "Sejong 1A Unit 7 · 토 = earth",
+    "romanization": "toyoil"
+  },
+  {
+    "id": "sejong_112",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:17Z",
+    "english": "Sunday",
+    "korean": "일요일",
+    "notes": "Sejong 1A Unit 7 · 일 = sun/day",
+    "romanization": "iryoil"
+  },
+  {
+    "id": "sejong_113",
+    "category": "Time",
+    "createdAt": "2026-09-10T10:05:18Z",
+    "english": "weekend",
+    "korean": "주말",
+    "notes": "Sejong 1A Unit 7 · 주 (week) + 말 (end)",
+    "romanization": "jumal"
+  },
+  {
+    "id": "sejong_114",
+    "category": "Weather",
+    "createdAt": "2026-09-10T10:06:00Z",
+    "english": "weather",
+    "korean": "날씨",
+    "notes": "Sejong 1A Unit 8 · Double ㅆ",
+    "romanization": "nalssi"
+  },
+  {
+    "id": "sejong_115",
+    "category": "Weather",
+    "createdAt": "2026-09-10T10:06:01Z",
+    "english": "rain",
+    "korean": "비",
+    "notes": "Sejong 1A Unit 8 · 비가 와요 = It's raining",
+    "romanization": "bi"
+  },
+  {
+    "id": "sejong_116",
+    "category": "Weather",
+    "createdAt": "2026-09-10T10:06:02Z",
+    "english": "snow / eye",
+    "korean": "눈",
+    "notes": "Sejong 1A Unit 8 · Two meanings: snow + eye",
+    "romanization": "nun"
+  },
+  {
+    "id": "sejong_117",
+    "category": "Weather",
+    "createdAt": "2026-09-10T10:06:03Z",
+    "english": "wind",
+    "korean": "바람",
+    "notes": "Sejong 1A Unit 8",
+    "romanization": "baram"
+  },
+  {
+    "id": "sejong_118",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:00Z",
+    "english": "to be big",
+    "korean": "크다",
+    "notes": "Sejong 1A Unit 4 · 커요 (polite)",
+    "romanization": "keuda"
+  },
+  {
+    "id": "sejong_119",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:01Z",
+    "english": "to be small",
+    "korean": "작다",
+    "notes": "Sejong 1A Unit 4 · 작아요 (polite)",
+    "romanization": "jakda"
+  },
+  {
+    "id": "sejong_120",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:02Z",
+    "english": "to be many / much",
+    "korean": "많다",
+    "notes": "Sejong 1A Unit 4 · 많아요 (polite)",
+    "romanization": "manta"
+  },
+  {
+    "id": "sejong_121",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:03Z",
+    "english": "to be delicious",
+    "korean": "맛있다",
+    "notes": "Sejong 1A Unit 5 · 맛있어요 (polite); 맛 = taste",
+    "romanization": "masitda"
+  },
+  {
+    "id": "sejong_122",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:04Z",
+    "english": "to be hot (weather)",
+    "korean": "덥다",
+    "notes": "Sejong 1A Unit 8 · Irregular: 더워요 (polite)",
+    "romanization": "deopda"
+  },
+  {
+    "id": "sejong_123",
+    "category": "Adjectives",
+    "createdAt": "2026-09-10T10:07:05Z",
+    "english": "to be cold (weather)",
+    "korean": "춥다",
+    "notes": "Sejong 1A Unit 8 · Irregular: 추워요 (polite)",
+    "romanization": "chupda"
+  },
+  {
+    "id": "sejong_124",
+    "category": "Transportation",
+    "createdAt": "2026-09-10T10:08:00Z",
+    "english": "bus",
+    "korean": "버스",
+    "notes": "Sejong 1A Unit 8",
+    "romanization": "beoseu"
+  },
+  {
+    "id": "sejong_125",
+    "category": "Transportation",
+    "createdAt": "2026-09-10T10:08:01Z",
+    "english": "subway",
+    "korean": "지하철",
+    "notes": "Sejong 1A Unit 8 · 지하 (underground) + 철 (iron)",
+    "romanization": "jihacheol"
+  },
+  {
+    "id": "sejong_126",
+    "category": "Transportation",
+    "createdAt": "2026-09-10T10:08:02Z",
+    "english": "taxi",
+    "korean": "택시",
+    "notes": "Sejong 1A Unit 8",
+    "romanization": "taeksi"
+  },
+  {
+    "id": "sejong_127",
+    "category": "Transportation",
+    "createdAt": "2026-09-10T10:08:03Z",
+    "english": "bicycle",
+    "korean": "자전거",
+    "notes": "Sejong 1A Unit 7",
+    "romanization": "jajeongeo"
+  },
+  {
+    "id": "sejong_128",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:00Z",
+    "english": "what",
+    "korean": "뭐",
+    "notes": "Sejong 1A Unit 3 · Also 무엇 (formal)",
+    "romanization": "mwo"
+  },
+  {
+    "id": "sejong_129",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:01Z",
+    "english": "where",
+    "korean": "어디",
+    "notes": "Sejong 1A Unit 3",
+    "romanization": "eodi"
+  },
+  {
+    "id": "sejong_130",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:02Z",
+    "english": "who",
+    "korean": "누구",
+    "notes": "Sejong 1A Unit 2",
+    "romanization": "nugu"
+  },
+  {
+    "id": "sejong_131",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:03Z",
+    "english": "when",
+    "korean": "언제",
+    "notes": "Sejong 1A Unit 6",
+    "romanization": "eonje"
+  },
+  {
+    "id": "sejong_132",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:04Z",
+    "english": "why",
+    "korean": "왜",
+    "notes": "Sejong 1A Unit 7",
+    "romanization": "wae"
+  },
+  {
+    "id": "sejong_133",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:05Z",
+    "english": "how",
+    "korean": "어떻게",
+    "notes": "Sejong 1A Unit 8",
+    "romanization": "eotteoke"
+  },
+  {
+    "id": "sejong_134",
+    "category": "Question Words",
+    "createdAt": "2026-09-10T10:09:06Z",
+    "english": "how much",
+    "korean": "얼마",
+    "notes": "Sejong 1A Unit 4 · 얼마예요? = How much is it?",
+    "romanization": "eolma"
+  },
+  {
+    "id": "sejong_135",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:10:00Z",
+    "english": "please give me",
+    "korean": "주세요",
+    "notes": "Sejong 1A Unit 4 · 물 주세요 = Water, please",
+    "romanization": "juseyo"
+  },
+  {
+    "id": "sejong_136",
+    "category": "Greetings",
+    "createdAt": "2026-09-10T10:10:01Z",
+    "english": "I understand",
+    "korean": "알겠습니다",
+    "notes": "Sejong 1A · Very formal",
+    "romanization": "algesseumnida"
+  },
+  {
+    "id": "sejong_137",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:11:00Z",
+    "english": "Korean food",
+    "korean": "한식",
+    "notes": "Sejong 1A Unit 5 · 한 (Korean) + 식 (food)",
+    "romanization": "hansik"
+  },
+  {
+    "id": "sejong_138",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:11:01Z",
+    "english": "fruit",
+    "korean": "과일",
+    "notes": "Sejong 1A Unit 5",
+    "romanization": "gwail"
+  },
+  {
+    "id": "sejong_139",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:11:02Z",
+    "english": "meat",
+    "korean": "고기",
+    "notes": "Sejong 1A Unit 5",
+    "romanization": "gogi"
+  },
+  {
+    "id": "sejong_140",
+    "category": "Food",
+    "createdAt": "2026-09-10T10:11:03Z",
+    "english": "vegetable",
+    "korean": "야채",
+    "notes": "Sejong 1A Unit 5 · Also 채소 (chaeso)",
+    "romanization": "yachae"
+  },
+  {
+    "id": "sejong_141",
+    "category": "Activities",
+    "createdAt": "2026-09-10T10:12:00Z",
+    "english": "movie",
+    "korean": "영화",
+    "notes": "Sejong 1A Unit 7 · 영화를 봐요 = I watch a movie",
+    "romanization": "yeonghwa"
+  },
+  {
+    "id": "sejong_142",
+    "category": "Activities",
+    "createdAt": "2026-09-10T10:12:01Z",
+    "english": "music",
+    "korean": "음악",
+    "notes": "Sejong 1A Unit 7 · 음악을 들어요 = I listen to music",
+    "romanization": "eumak"
+  }
+]
