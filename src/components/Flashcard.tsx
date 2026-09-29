@@ -2,28 +2,8 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import Avatar from './Avatar';
-import { VocabCard, getCardsByCategory, getRandomCards, getCategories } from '@/lib/vocabulary';
+import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
 import { speakKorean } from '@/lib/tts';
-
-function escHtml(s: string) {
-  const d = document.createElement('div');
-  d.textContent = s;
-  return d.innerHTML;
-}
-
-function renderSyllables(korean: string, romanization: string): string {
-  const chars = korean.replace(/\s/g, '').split('');
-  if (chars.length <= 1) return '';
-  const romParts = romanization.split(/[-\s]+/);
-  let html = '<div class="syllable-box">';
-  for (let i = 0; i < chars.length; i++) {
-    html += `<div class="syllable"><div class="char">${escHtml(chars[i])}</div>`;
-    if (romParts[i]) html += `<div class="rom">${escHtml(romParts[i])}</div>`;
-    html += '</div>';
-  }
-  html += '</div>';
-  return html;
-}
 
 interface FlashcardProps {
   onScore: (n: number) => void;
@@ -32,8 +12,7 @@ interface FlashcardProps {
 export default function Flashcard({ onScore }: FlashcardProps) {
   const [category, setCategory] = useState('Alle');
   const [card, setCard] = useState<VocabCard | null>(null);
-  const [options, setOptions] = useState<string[]>([]);
-  const [answered, setAnswered] = useState<string | null>(null);
+  const [flipped, setFlipped] = useState(false);
   const [expression, setExpression] = useState<'normal' | 'happy' | 'speaking' | 'listening'>('normal');
   const categories = getCategories();
 
@@ -43,12 +22,8 @@ export default function Flashcard({ onScore }: FlashcardProps) {
       const cards = getCardsByCategory(useCat);
       if (!cards.length) return;
       const idx = Math.floor(Math.random() * cards.length);
-      const c = cards[idx];
-      const wrong = getRandomCards(3, c.english).map((x) => x.english);
-      const opts = [c.english, ...wrong].sort(() => Math.random() - 0.5);
-      setCard(c);
-      setOptions(opts);
-      setAnswered(null);
+      setCard(cards[idx]);
+      setFlipped(false);
       setExpression('normal');
     },
     [category],
@@ -58,16 +33,11 @@ export default function Flashcard({ onScore }: FlashcardProps) {
     nextCard();
   }, []);
 
-  function handleAnswer(opt: string) {
-    if (answered) return;
-    setAnswered(opt);
-    if (card && opt === card.english) {
+  function handleFlip() {
+    if (!flipped) {
+      setFlipped(true);
       setExpression('happy');
-      onScore(10);
-      setTimeout(() => nextCard(), 1800);
-    } else {
-      setExpression('normal');
-      setTimeout(() => nextCard(), 2500);
+      onScore(5);
     }
   }
 
@@ -78,11 +48,8 @@ export default function Flashcard({ onScore }: FlashcardProps) {
 
   if (!card) return null;
 
-  const syllablesHtml = renderSyllables(card.korean, card.romanization);
-
   return (
     <div>
-      {/* Category filter */}
       <div className="flex flex-wrap gap-1.5 mb-3">
         {categories.map((cat) => (
           <button
@@ -95,29 +62,40 @@ export default function Flashcard({ onScore }: FlashcardProps) {
         ))}
       </div>
 
-      {/* Avatar */}
       <div className="flex justify-center py-2">
         <Avatar expression={expression} />
       </div>
 
-      {/* Word bubble */}
-      <div className="bubble">
-        <span className="korean-big">{card.korean}</span>
-        {syllablesHtml && (
-          <div dangerouslySetInnerHTML={{ __html: syllablesHtml }} />
-        )}
-        <span className="roman">[ {card.romanization} ]</span>
-        {card.notes && (
-          <span className="block text-xs text-text-muted my-0.5">{card.notes}</span>
-        )}
-        <span className="block text-sm text-text-mid">Was bedeutet dieses Wort?</span>
+      <div
+        className="flip-card"
+        onClick={handleFlip}
+        style={{ cursor: 'pointer' }}
+      >
+        <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
+          <div className="flip-card-front bubble">
+            <span className="korean-big">{card.korean}</span>
+            <span className="roman">[ {card.romanization} ]</span>
+            {card.notes && (
+              <span className="block text-xs text-text-muted my-0.5">{card.notes}</span>
+            )}
+            <span className="block text-sm text-text-muted mt-2">Tippe zum Umdrehen</span>
+          </div>
+          <div className="flip-card-back bubble">
+            <span className="korean-big">{card.korean}</span>
+            <span className="roman">[ {card.romanization} ]</span>
+            <span className="english text-lg" style={{ marginTop: '8px', display: 'block' }}>{card.english}</span>
+            {card.notes && (
+              <span className="block text-xs text-text-muted my-0.5">{card.notes}</span>
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* Play button */}
-      <div className="flex justify-center my-2">
+      <div className="flex justify-center my-3">
         <button
           className="play-btn"
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation();
             setExpression('speaking');
             speakKorean(card.korean).then(() => setExpression('normal'));
           }}
@@ -126,34 +104,11 @@ export default function Flashcard({ onScore }: FlashcardProps) {
         </button>
       </div>
 
-      {/* Choices */}
-      <div className="choices">
-        {options.map((opt) => {
-          let cls = 'choice-btn';
-          if (answered) {
-            if (opt === card.english) cls += ' correct';
-            else if (opt === answered) cls += ' wrong';
-          }
-          return (
-            <button
-              key={opt}
-              className={cls}
-              onClick={() => handleAnswer(opt)}
-              disabled={!!answered}
-            >
-              {opt}
-            </button>
-          );
-        })}
+      <div className="flex justify-center mt-2">
+        <button className="next-btn" onClick={() => nextCard()}>
+          Nächstes Wort →
+        </button>
       </div>
-
-      {answered && (
-        <div className="flex justify-center mt-4">
-          <button className="next-btn" onClick={() => nextCard()}>
-            Nächstes Wort →
-          </button>
-        </div>
-      )}
     </div>
   );
 }

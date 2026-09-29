@@ -179,6 +179,30 @@ body {
 }
 .retry-btn:hover { background: var(--accent); color: white; }
 
+/* Flip card */
+.flip-card {
+  perspective: 800px;
+  margin: 8px 0 16px;
+}
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: rotateY(180deg);
+}
+
 /* Choices */
 .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
 .choice-btn {
