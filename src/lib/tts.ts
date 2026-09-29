@@ -1,4 +1,7 @@
 let audioCtx: AudioContext | null = null;
+let koreanVoice: SpeechSynthesisVoice | null = null;
+let voiceCheckDone = false;
+let voiceCheckPromise: Promise<void> | null = null;
 
 function getAudioContext(): AudioContext {
   if (!audioCtx) {
@@ -14,44 +17,83 @@ export function unlockAudio(): void {
   if (ctx.state === 'suspended') {
     ctx.resume();
   }
-  // iOS Safari requires speechSynthesis to be "warmed up" during a user gesture
-  if (window.speechSynthesis) {
-    const warmup = new SpeechSynthesisUtterance('');
-    warmup.volume = 0;
-    warmup.lang = 'ko-KR';
-    window.speechSynthesis.speak(warmup);
-    window.speechSynthesis.cancel();
-  }
 }
 
-function speakWithBrowser(text: string, rate: number): Promise<boolean> {
+function findKoreanVoice(): SpeechSynthesisVoice | null {
+  if (!window.speechSynthesis) return null;
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find((v) => v.lang.startsWith('ko')) || null;
+}
+
+function ensureVoiceCheck(): Promise<void> {
+  if (voiceCheckDone) return Promise.resolve();
+  if (voiceCheckPromise) return voiceCheckPromise;
+
+  const found = findKoreanVoice();
+  if (found) {
+    koreanVoice = found;
+    voiceCheckDone = true;
+    return Promise.resolve();
+  }
+
+  if (window.speechSynthesis && window.speechSynthesis.getVoices().length > 0) {
+    voiceCheckDone = true;
+    return Promise.resolve();
+  }
+
+  voiceCheckPromise = new Promise<void>((resolve) => {
+    if (!window.speechSynthesis) {
+      voiceCheckDone = true;
+      resolve();
+      return;
+    }
+
+    const finish = () => {
+      koreanVoice = findKoreanVoice();
+      voiceCheckDone = true;
+      resolve();
+    };
+
+    window.speechSynthesis.addEventListener('voiceschanged', finish, { once: true });
+    setTimeout(() => {
+      if (!voiceCheckDone) finish();
+    }, 1500);
+  });
+
+  return voiceCheckPromise;
+}
+
+function speakWithBrowser(text: string, voice: SpeechSynthesisVoice, rate: number): Promise<boolean> {
   return new Promise((resolve) => {
     if (!window.speechSynthesis) { resolve(false); return; }
-    window.speechSynthesis.cancel();
+
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'ko-KR';
+    u.voice = voice;
     u.rate = rate;
-    const voices = window.speechSynthesis.getVoices();
-    const koVoice = voices.find((v) => v.lang.startsWith('ko'));
-    if (koVoice) u.voice = koVoice;
 
     let done = false;
-    u.onend = () => { if (!done) { done = true; resolve(true); } };
-    u.onerror = (e) => {
-      if (!done) {
-        done = true;
-        // "interrupted" and "canceled" are not real failures
-        const err = e as SpeechSynthesisErrorEvent;
-        resolve(err.error === 'interrupted' || err.error === 'canceled');
-      }
+    const startTime = Date.now();
+
+    u.onend = () => {
+      if (done) return;
+      done = true;
+      resolve(Date.now() - startTime > 150);
     };
+    u.onerror = () => {
+      if (done) return;
+      done = true;
+      resolve(false);
+    };
+
     try {
       window.speechSynthesis.speak(u);
     } catch {
+      done = true;
       resolve(false);
       return;
     }
-    // iOS sometimes fires neither onend nor onerror — timeout as safety net
+
     setTimeout(() => {
       if (!done) {
         done = true;
@@ -72,6 +114,8 @@ async function speakWithApi(text: string): Promise<boolean> {
     if (!res.ok) return false;
 
     const arrayBuffer = await res.arrayBuffer();
+    if (arrayBuffer.byteLength < 100) return false;
+
     const audioBuffer = await ctx.decodeAudioData(arrayBuffer.slice(0));
     const source = ctx.createBufferSource();
     source.buffer = audioBuffer;
@@ -90,10 +134,10 @@ async function speakWithApi(text: string): Promise<boolean> {
 export async function speakKorean(text: string, rate = 0.6): Promise<boolean> {
   if (!text) return false;
 
-  // Always try browser SpeechSynthesis first — iOS has Korean voices built in
-  // even when getVoices() returns empty (voices load asynchronously on iOS)
-  if (window.speechSynthesis) {
-    const ok = await speakWithBrowser(text, rate);
+  await ensureVoiceCheck();
+
+  if (koreanVoice) {
+    const ok = await speakWithBrowser(text, koreanVoice, rate);
     if (ok) return true;
   }
 
@@ -104,4 +148,7 @@ export function isTtsAvailable(): boolean | null {
   return true;
 }
 
-export function initTts(): void {}
+export function initTts(): void {
+  if (typeof window === 'undefined') return;
+  ensureVoiceCheck();
+}
