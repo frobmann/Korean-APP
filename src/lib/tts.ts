@@ -2,10 +2,17 @@ let audioCtx: AudioContext | null = null;
 let koreanVoice: SpeechSynthesisVoice | null = null;
 let voiceCheckDone = false;
 let voiceCheckPromise: Promise<void> | null = null;
+let sessionPrimed = false;
+
+const SILENT_WAV =
+  'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=';
 
 function getAudioContext(): AudioContext {
   if (!audioCtx) {
-    const Ctor = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    const Ctor =
+      window.AudioContext ||
+      (window as unknown as { webkitAudioContext: typeof AudioContext })
+        .webkitAudioContext;
     audioCtx = new Ctor();
   }
   return audioCtx;
@@ -13,9 +20,26 @@ function getAudioContext(): AudioContext {
 
 export function unlockAudio(): void {
   if (typeof window === 'undefined') return;
+
   const ctx = getAudioContext();
-  if (ctx.state === 'suspended') {
-    ctx.resume();
+  if (ctx.state === 'suspended') ctx.resume();
+
+  if (!sessionPrimed) {
+    sessionPrimed = true;
+
+    try {
+      const buf = ctx.createBuffer(1, 1, 22050);
+      const src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+    } catch {}
+
+    try {
+      const el = new Audio(SILENT_WAV);
+      el.volume = 0.01;
+      el.play().catch(() => {});
+    } catch {}
   }
 }
 
@@ -54,7 +78,9 @@ function ensureVoiceCheck(): Promise<void> {
       resolve();
     };
 
-    window.speechSynthesis.addEventListener('voiceschanged', finish, { once: true });
+    window.speechSynthesis.addEventListener('voiceschanged', finish, {
+      once: true,
+    });
     setTimeout(() => {
       if (!voiceCheckDone) finish();
     }, 1500);
@@ -63,9 +89,16 @@ function ensureVoiceCheck(): Promise<void> {
   return voiceCheckPromise;
 }
 
-function speakWithBrowser(text: string, voice: SpeechSynthesisVoice, rate: number): Promise<boolean> {
+function speakWithBrowser(
+  text: string,
+  voice: SpeechSynthesisVoice,
+  rate: number,
+): Promise<boolean> {
   return new Promise((resolve) => {
-    if (!window.speechSynthesis) { resolve(false); return; }
+    if (!window.speechSynthesis) {
+      resolve(false);
+      return;
+    }
 
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'ko-KR';
@@ -110,6 +143,66 @@ async function speakWithApi(text: string): Promise<boolean> {
     if (ctx.state === 'suspended') await ctx.resume();
 
     const encoded = encodeURIComponent(text);
+    const url = `/api/tts?text=${encoded}`;
+
+    const audio = new Audio();
+    audio.crossOrigin = 'anonymous';
+    audio.preload = 'auto';
+    audio.src = url;
+
+    let source: MediaElementAudioSourceNode;
+    try {
+      source = ctx.createMediaElementSource(audio);
+      source.connect(ctx.destination);
+    } catch {
+      return speakWithApiFallback(text);
+    }
+
+    return new Promise<boolean>((resolve) => {
+      let settled = false;
+
+      audio.onended = () => {
+        if (!settled) {
+          settled = true;
+          resolve(true);
+        }
+      };
+
+      audio.onerror = () => {
+        if (!settled) {
+          settled = true;
+          resolve(false);
+        }
+      };
+
+      audio
+        .play()
+        .then(() => {
+          setTimeout(() => {
+            if (!settled) {
+              settled = true;
+              resolve(true);
+            }
+          }, 15000);
+        })
+        .catch(() => {
+          if (!settled) {
+            settled = true;
+            resolve(false);
+          }
+        });
+    });
+  } catch {
+    return speakWithApiFallback(text);
+  }
+}
+
+async function speakWithApiFallback(text: string): Promise<boolean> {
+  try {
+    const ctx = getAudioContext();
+    if (ctx.state === 'suspended') await ctx.resume();
+
+    const encoded = encodeURIComponent(text);
     const res = await fetch(`/api/tts?text=${encoded}`);
     if (!res.ok) return false;
 
@@ -131,17 +224,21 @@ async function speakWithApi(text: string): Promise<boolean> {
   }
 }
 
-export async function speakKorean(text: string, rate = 0.6): Promise<boolean> {
+export async function speakKorean(
+  text: string,
+  rate = 0.6,
+): Promise<boolean> {
   if (!text) return false;
 
-  await ensureVoiceCheck();
+  const apiOk = await speakWithApi(text);
+  if (apiOk) return true;
 
+  await ensureVoiceCheck();
   if (koreanVoice) {
-    const ok = await speakWithBrowser(text, koreanVoice, rate);
-    if (ok) return true;
+    return speakWithBrowser(text, koreanVoice, rate);
   }
 
-  return speakWithApi(text);
+  return false;
 }
 
 export function isTtsAvailable(): boolean | null {
