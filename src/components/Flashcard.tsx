@@ -74,10 +74,6 @@ export default function Flashcard({ onScore }: FlashcardProps) {
         <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
           <div className="flip-card-front bubble">
             <span className="korean-big">{card.korean}</span>
-            <span className="roman">[ {card.romanization} ]</span>
-            {card.notes && (
-              <span className="block text-xs text-text-muted my-0.5">{card.notes}</span>
-            )}
             <span className="block text-sm text-text-muted mt-2">Tippe zum Umdrehen</span>
           </div>
           <div className="flip-card-back bubble">
