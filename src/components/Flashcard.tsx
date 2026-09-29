@@ -3,7 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Avatar from './Avatar';
 import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
-import { speakKorean } from '@/lib/tts';
+import { speakKorean, unlockAudio } from '@/lib/tts';
 
 interface FlashcardProps {
   onScore: (n: number) => void;
@@ -92,6 +92,7 @@ export default function Flashcard({ onScore }: FlashcardProps) {
           className="play-btn"
           onClick={(e) => {
             e.stopPropagation();
+            unlockAudio();
             setExpression('speaking');
             speakKorean(card.korean).then(() => setExpression('normal'));
           }}

@@ -3,7 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import Avatar from './Avatar';
 import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
-import { speakKorean } from '@/lib/tts';
+import { speakKorean, unlockAudio } from '@/lib/tts';
 
 function similarity(a: string, b: string): number {
   if (a === b) return 3;
@@ -154,6 +154,7 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
           <button
             className="play-btn"
             onClick={() => {
+              unlockAudio();
               setExpression('speaking');
               speakKorean(card.korean).then(() => setExpression('normal'));
             }}

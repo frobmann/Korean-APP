@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Avatar from './Avatar';
 import { topicPrompts } from '@/lib/topic-prompts';
-import { speakKorean } from '@/lib/tts';
+import { speakKorean, unlockAudio } from '@/lib/tts';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -100,6 +100,7 @@ export default function Chat() {
   async function handleSend() {
     const text = input.trim();
     if (!text || loading) return;
+    unlockAudio();
     setInput('');
     setLoading(true);
     setExpression('normal');
@@ -180,6 +181,7 @@ export default function Chat() {
               <button
                 className="speak-btn"
                 onClick={() => {
+                  unlockAudio();
                   const kor = msg.content.match(/^[가-힯㄰-㆏\s!?.,~\-"'()0-9]+/m);
                   if (kor) speakKorean(kor[0]);
                 }}
