@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Avatar from './Avatar';
 import { topicPrompts } from '@/lib/topic-prompts';
 import { speakKorean, unlockAudio } from '@/lib/tts';
+import { useAvatar } from '@/lib/use-avatar';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -66,6 +67,7 @@ export default function Chat() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [expression, setExpression] = useState<'normal' | 'happy' | 'speaking' | 'listening'>('normal');
+  const { videoUrl, speak: avatarSpeak } = useAvatar();
   const msgsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -132,6 +134,7 @@ export default function Chat() {
 
       const koreanMatch = data.text.match(/^[가-힯㄰-㆏\s!?.,~\-"'()0-9]+/m);
       if (koreanMatch) {
+        avatarSpeak(koreanMatch[0]);
         speakKorean(koreanMatch[0]);
       }
     } catch (e) {
@@ -152,7 +155,7 @@ export default function Chat() {
     <div className="flex flex-col h-full">
       {/* Avatar */}
       <div className="flex justify-center py-2">
-        <Avatar expression={expression} size={100} />
+        <Avatar expression={expression} size={100} videoUrl={videoUrl} />
       </div>
 
       {/* Topic chips */}

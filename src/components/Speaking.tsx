@@ -5,6 +5,7 @@ import Avatar from './Avatar';
 import CategorySelect from './CategorySelect';
 import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
 import { speakKorean, unlockAudio } from '@/lib/tts';
+import { useAvatar } from '@/lib/use-avatar';
 
 function similarity(a: string, b: string): number {
   if (a === b) return 3;
@@ -46,6 +47,7 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
   const [recording, setRecording] = useState(false);
   const [result, setResult] = useState<{ spoken: string; score: number } | null>(null);
   const [showHint, setShowHint] = useState(false);
+  const { videoUrl, speak: avatarSpeak, clear: avatarClear } = useAvatar();
   const categories = getCategories();
   const hasSR = typeof window !== 'undefined' && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
 
@@ -59,6 +61,7 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
       setResult(null);
       setShowHint(false);
       setExpression('normal');
+      avatarClear();
     },
     [category],
   );
@@ -124,7 +127,7 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
       />
 
       <div className="flex justify-center py-2">
-        <Avatar expression={expression} />
+        <Avatar expression={expression} videoUrl={videoUrl} />
       </div>
 
       <div className="bubble">
@@ -151,6 +154,7 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
             onClick={() => {
               unlockAudio();
               setExpression('speaking');
+              avatarSpeak(card.korean);
               speakKorean(card.korean).then(() => setExpression('normal'));
             }}
           >

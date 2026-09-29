@@ -5,6 +5,7 @@ import Avatar from './Avatar';
 import CategorySelect from './CategorySelect';
 import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
 import { speakKorean, unlockAudio } from '@/lib/tts';
+import { useAvatar } from '@/lib/use-avatar';
 
 interface FlashcardProps {
   onScore: (n: number) => void;
@@ -15,6 +16,7 @@ export default function Flashcard({ onScore }: FlashcardProps) {
   const [card, setCard] = useState<VocabCard | null>(null);
   const [flipped, setFlipped] = useState(false);
   const [expression, setExpression] = useState<'normal' | 'happy' | 'speaking' | 'listening'>('normal');
+  const { videoUrl, speak: avatarSpeak, clear: avatarClear } = useAvatar();
   const categories = getCategories();
 
   const nextCard = useCallback(
@@ -26,6 +28,7 @@ export default function Flashcard({ onScore }: FlashcardProps) {
       setCard(cards[idx]);
       setFlipped(false);
       setExpression('normal');
+      avatarClear();
     },
     [category],
   );
@@ -58,7 +61,7 @@ export default function Flashcard({ onScore }: FlashcardProps) {
       />
 
       <div className="flex justify-center py-2">
-        <Avatar expression={expression} />
+        <Avatar expression={expression} videoUrl={videoUrl} />
       </div>
 
       <div
@@ -89,6 +92,7 @@ export default function Flashcard({ onScore }: FlashcardProps) {
             e.stopPropagation();
             unlockAudio();
             setExpression('speaking');
+            avatarSpeak(card.korean);
             speakKorean(card.korean).then(() => setExpression('normal'));
           }}
         >
