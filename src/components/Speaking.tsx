@@ -135,7 +135,9 @@ export default function Speaking({ mode, onScore }: SpeakingProps) {
       <div className="bubble">
         {mode === 'speak' ? (
           <>
-            <span className="english text-lg">{card.english}</span>
+            <span className="korean-big">{card.korean}</span>
+            <span className="roman">[ {card.romanization} ]</span>
+            <span className="english">{card.english}</span>
             <br />
             <span className="block text-sm text-text-muted mt-1">Sag es auf Koreanisch!</span>
           </>
