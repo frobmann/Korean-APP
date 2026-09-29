@@ -186,20 +186,26 @@ body {
 }
 .flip-card-inner {
   position: relative;
-  transition: transform 0.5s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
+  min-height: 140px;
 }
 .flip-card-inner.flipped {
   transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {
   backface-visibility: hidden;
-}
-.flip-card-back {
+  -webkit-backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+}
+.flip-card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.flip-card-back {
   transform: rotateY(180deg);
 }
 
