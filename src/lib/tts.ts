@@ -1,4 +1,13 @@
 let hasKoreanVoice: boolean | null = null;
+let audioEl: HTMLAudioElement | null = null;
+
+function getAudio(): HTMLAudioElement {
+  if (!audioEl) {
+    audioEl = new Audio();
+    audioEl.setAttribute('playsinline', '');
+  }
+  return audioEl;
+}
 
 function checkKoreanVoice(): boolean {
   if (typeof window === 'undefined' || !window.speechSynthesis) return false;
@@ -25,14 +34,24 @@ function speakWithBrowser(text: string, rate: number): Promise<boolean> {
   });
 }
 
-function speakWithApi(text: string): Promise<boolean> {
-  return new Promise((resolve) => {
+async function speakWithApi(text: string): Promise<boolean> {
+  try {
     const encoded = encodeURIComponent(text);
-    const audio = new Audio(`/api/tts?text=${encoded}`);
-    audio.onended = () => resolve(true);
-    audio.onerror = () => resolve(false);
-    audio.play().catch(() => resolve(false));
-  });
+    const res = await fetch(`/api/tts?text=${encoded}`);
+    if (!res.ok) return false;
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const audio = getAudio();
+    audio.src = url;
+
+    return new Promise((resolve) => {
+      audio.onended = () => { URL.revokeObjectURL(url); resolve(true); };
+      audio.onerror = () => { URL.revokeObjectURL(url); resolve(false); };
+      audio.play().catch(() => { URL.revokeObjectURL(url); resolve(false); });
+    });
+  } catch {
+    return false;
+  }
 }
 
 export async function speakKorean(text: string, rate = 0.6): Promise<boolean> {
@@ -56,6 +75,16 @@ export function isTtsAvailable(): boolean | null {
 
 export function initTts(): void {
   if (typeof window === 'undefined') return;
+
+  getAudio();
+
+  document.addEventListener('touchstart', function unlock() {
+    const audio = getAudio();
+    audio.src = 'data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRwmHAAAAAAD/+1DEAAAH+ANoUAAAIv8yblTBEACqqq7u7u7u7v/EREd3d3f/iIju7u7u////xERHd3d3//iI7u7u7u7///8REd3d3d3//+Iju7u7v////ERERERERERERERERERERER//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+1DEUgPAAADSAAAAAAAANIAAAAT//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8=';
+    audio.play().then(() => { audio.pause(); audio.currentTime = 0; }).catch(() => {});
+    document.removeEventListener('touchstart', unlock);
+  }, { once: true });
+
   if (window.speechSynthesis) {
     window.speechSynthesis.getVoices();
     window.speechSynthesis.onvoiceschanged = () => {
