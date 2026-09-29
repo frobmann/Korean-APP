@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import Avatar from './Avatar';
+import CategorySelect from './CategorySelect';
 import { VocabCard, getCardsByCategory, getCategories } from '@/lib/vocabulary';
 import { speakKorean, unlockAudio } from '@/lib/tts';
 
@@ -50,17 +51,11 @@ export default function Flashcard({ onScore }: FlashcardProps) {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-1.5 mb-3">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={`cat-chip ${category === cat ? 'active' : ''}`}
-            onClick={() => handleCategoryChange(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+      <CategorySelect
+        categories={categories}
+        value={category}
+        onChange={handleCategoryChange}
+      />
 
       <div className="flex justify-center py-2">
         <Avatar expression={expression} />

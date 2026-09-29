@@ -229,11 +229,74 @@ body {
 .choice-btn.wrong { border-color: var(--error); background: var(--error-soft); color: var(--error); }
 .choice-btn:disabled { cursor: default; opacity: .85; }
 
-/* Category & Topic chips */
-.cat-chip, .topic-chip {
+/* Category dropdown */
+.cat-select {
+  position: relative;
+  margin-bottom: 12px;
+}
+.cat-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: .15s;
+}
+.cat-select-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.cat-select-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 180px;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  z-index: 50;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.cat-select-item {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-family: inherit;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: .1s;
+}
+.cat-select-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.cat-select-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Topic chips */
+.topic-chip {
   padding: 3px 8px;
   border: 1.5px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
   background: var(--surface);
   font-family: inherit;
   font-size: .7rem;
@@ -242,8 +305,6 @@ body {
   cursor: pointer;
   transition: .15s;
 }
-.topic-chip { border-radius: 20px; }
-.cat-chip:hover, .cat-chip.active,
 .topic-chip:hover, .topic-chip.active {
   border-color: var(--primary);
   background: var(--primary-soft);

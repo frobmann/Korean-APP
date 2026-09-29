@@ -2500,5 +2500,230 @@
     "korean": "음악",
     "notes": "Sejong 1A Unit 7 · 음악을 들어요 = I listen to music",
     "romanization": "eumak"
+  },
+  {
+    "id": "gram_001",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:00Z",
+    "english": "topic marker (after vowel)",
+    "korean": "는",
+    "notes": "nach Vokal: 저는 (jeoneun = ich)",
+    "romanization": "neun"
+  },
+  {
+    "id": "gram_002",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:01Z",
+    "english": "topic marker (after consonant)",
+    "korean": "은",
+    "notes": "nach Konsonant: 선생님은 (seonsaengnimeun)",
+    "romanization": "eun"
+  },
+  {
+    "id": "gram_003",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:02Z",
+    "english": "subject marker (after vowel)",
+    "korean": "가",
+    "notes": "nach Vokal: 날씨가 (nalssiga = das Wetter)",
+    "romanization": "ga"
+  },
+  {
+    "id": "gram_004",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:03Z",
+    "english": "subject marker (after consonant)",
+    "korean": "이",
+    "notes": "nach Konsonant: 학생이 (haksaengi)",
+    "romanization": "i"
+  },
+  {
+    "id": "gram_005",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:04Z",
+    "english": "object marker (after vowel)",
+    "korean": "를",
+    "notes": "nach Vokal: 커피를 (keopireul = Kaffee)",
+    "romanization": "reul"
+  },
+  {
+    "id": "gram_006",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:05Z",
+    "english": "object marker (after consonant)",
+    "korean": "을",
+    "notes": "nach Konsonant: 밥을 (babeul = Reis/Essen)",
+    "romanization": "eul"
+  },
+  {
+    "id": "gram_007",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:06Z",
+    "english": "place marker (at/in)",
+    "korean": "에",
+    "notes": "Ort/Zeit: 학교에 (hakgyoe = in der Schule)",
+    "romanization": "e"
+  },
+  {
+    "id": "gram_008",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:07Z",
+    "english": "place marker (at, with people)",
+    "korean": "에서",
+    "notes": "Aktionsort: 학교에서 공부해요 (in der Schule lernen)",
+    "romanization": "eseo"
+  },
+  {
+    "id": "gram_009",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:08Z",
+    "english": "is/am (after vowel, polite)",
+    "korean": "예요",
+    "notes": "nach Vokal: 의사예요 (uisayeyo = bin Arzt)",
+    "romanization": "yeyo"
+  },
+  {
+    "id": "gram_010",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:09Z",
+    "english": "is/am (after consonant, polite)",
+    "korean": "이에요",
+    "notes": "nach Konsonant: 학생이에요 (haksaengieyo = bin Schüler)",
+    "romanization": "ieyo"
+  },
+  {
+    "id": "gram_011",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:10Z",
+    "english": "is not / am not",
+    "korean": "아니에요",
+    "notes": "Verneinung: 학생이 아니에요 (bin kein Schüler)",
+    "romanization": "anieyo"
+  },
+  {
+    "id": "gram_012",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:11Z",
+    "english": "and (connecting nouns)",
+    "korean": "와/과",
+    "notes": "와 nach Vokal, 과 nach Konsonant: 커피와 빵 (Kaffee und Brot)",
+    "romanization": "wa / gwa"
+  },
+  {
+    "id": "gram_013",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:12Z",
+    "english": "also / too",
+    "korean": "도",
+    "notes": "ersetzt 는/가: 저도 (jeodo = ich auch)",
+    "romanization": "do"
+  },
+  {
+    "id": "gram_014",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:13Z",
+    "english": "from (direction)",
+    "korean": "에서",
+    "notes": "Herkunft: 독일에서 왔어요 (aus Deutschland kommen)",
+    "romanization": "eseo"
+  },
+  {
+    "id": "gram_015",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:14Z",
+    "english": "to (direction)",
+    "korean": "에",
+    "notes": "Richtung: 학교에 가요 (zur Schule gehen)",
+    "romanization": "e"
+  },
+  {
+    "id": "gram_016",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:15Z",
+    "english": "want to (verb ending)",
+    "korean": "-고 싶어요",
+    "notes": "Stamm + 고 싶어요: 먹고 싶어요 (will essen)",
+    "romanization": "-go sipeoyo"
+  },
+  {
+    "id": "gram_017",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:16Z",
+    "english": "not (verb negation)",
+    "korean": "안",
+    "notes": "vor Verb: 안 먹어요 (esse nicht)",
+    "romanization": "an"
+  },
+  {
+    "id": "gram_018",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:17Z",
+    "english": "possessive marker",
+    "korean": "의",
+    "notes": "저의 = mein/e: 저의 이름 (mein Name)",
+    "romanization": "ui"
+  },
+  {
+    "id": "gram_019",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:18Z",
+    "english": "please do (polite request)",
+    "korean": "-세요",
+    "notes": "höfliche Bitte: 주세요 (juseyo = bitte geben)",
+    "romanization": "-seyo"
+  },
+  {
+    "id": "gram_020",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:19Z",
+    "english": "there is / exists",
+    "korean": "있어요",
+    "notes": "Existenz/Besitz: 시간이 있어요 (habe Zeit)",
+    "romanization": "isseoyo"
+  },
+  {
+    "id": "gram_021",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:20Z",
+    "english": "there is not / does not exist",
+    "korean": "없어요",
+    "notes": "Verneinung: 시간이 없어요 (habe keine Zeit)",
+    "romanization": "eopseoyo"
+  },
+  {
+    "id": "gram_022",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:21Z",
+    "english": "but / however",
+    "korean": "-지만",
+    "notes": "Stamm + 지만: 좋지만 비싸요 (gut aber teuer)",
+    "romanization": "-jiman"
+  },
+  {
+    "id": "gram_023",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:22Z",
+    "english": "because / so",
+    "korean": "-서",
+    "notes": "해서: 배가 고파서 먹어요 (esse weil hungrig)",
+    "romanization": "-seo"
+  },
+  {
+    "id": "gram_024",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:23Z",
+    "english": "can / be able to",
+    "korean": "-ㄹ 수 있어요",
+    "notes": "Stamm + ㄹ/을 수 있어요: 할 수 있어요 (kann machen)",
+    "romanization": "-l su isseoyo"
+  },
+  {
+    "id": "gram_025",
+    "category": "Grammatik",
+    "createdAt": "2026-09-29T10:00:24Z",
+    "english": "with (together)",
+    "korean": "하고",
+    "notes": "informell: 친구하고 (mit Freund)",
+    "romanization": "hago"
   }
 ]
